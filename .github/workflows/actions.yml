@@ -12,7 +12,7 @@ jobs:
       - name: Generate "extspam"
         run: docker run --rm ghcr.io/bluesky-07/wechat-token:latest > extspam.txt
       - name: Store as Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: extspam.txt
           path: extspam.txt
