@@ -1,10 +1,13 @@
 name: Generate extspam
 
-on: []
+# on: []
 #  workflow_dispatch:
 #  schedule:
 #    - cron: "0 * * * *"
 
+on:
+  workflow_dispatch:
+  
 jobs:
   generate:
     runs-on: ubuntu-latest
